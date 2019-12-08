@@ -391,8 +391,8 @@
                 </a>
 
                 
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
+                    <a href="https://zhao1118.github.io/contact/" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fas fa-comments"></i>留言板
                     </a>
                 
             </div>
@@ -493,7 +493,7 @@
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+            这世界上多的是初出江湖的毛头小子，和饱经沧桑的野客独夫的相逢，少年扬言要的是青楼薄幸名，要的是花魁的簪花，要的是酒醉鞭名马。老朽寒暄的是夕阳篱笆，荆钗布裙，和雨后烹新茶。相见就是一碗面的缘分，话不投机，一面之缘，天下之大，别相见了。
         </div>
     </div>
 </div>
@@ -532,6 +532,41 @@ $(function () {
 </script>
                     
 
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;一段故事
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                     style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#29F5C0',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'https://qiniu-xpc4.xpccdn.com/5dd6038e76422.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
                     
 
                     
